@@ -256,6 +256,7 @@ from openai import OpenAI
 import flashcards
 from dotenv import load_dotenv
 import time
+import pdfplumber
 
 # Load environment variables
 load_dotenv()
@@ -491,3 +492,4 @@ with tab3:
                     else:
 
                         st.write("**Stats:** No reviews yet")
+
