@@ -247,7 +247,7 @@
 #########################################################################3
 import streamlit as st
 import os
-import pdfplumber
+
 import docx2txt
 import chromadb
 from langchain.schema import Document
@@ -489,4 +489,5 @@ with tab3:
                         accuracy = stats['correct'] / total_attempts * 100
                         st.write(f"**Stats:** {total_attempts} reviews, {accuracy:.1f}% accuracy")
                     else:
+
                         st.write("**Stats:** No reviews yet")
